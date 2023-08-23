@@ -4,5 +4,5 @@ ter1 = int(input("Primeiro termo: "))
 raz = int(input("Razão: "))
 
 for num_termo in range(1, 21):
-    print(ter1 + (num_termo - 1) * raz, end = ", ")
+    print("| ", ter1 + (num_termo - 1) * raz, " |", end = "")
 
