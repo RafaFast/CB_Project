@@ -9,13 +9,29 @@ class Student:
         self.age = age
         self.grades = grades
 
-grades = dict()
+grades = list()
 name = input("What's your name? ")
 age = int(input("How old are you? "))
 
 while True:
-    grades = input("What grade do you have? ")
-    grade_score = int(input(""))
-    saida = input("Do you want to leave [Y/N]? ").upper()
-    if saida == "Y":
-        break
+    while True:
+        grades = input("What grade do you have? ")
+        saida_grade = input("Have you finished [Y/N]? ").upper()
+        if saida_grade == "Y":
+            break
+
+    for n in grades:
+        i = dict()
+        while True:
+            i[n] = int(input(f"{i[n[:]]}'s Score: "))
+            saida_score = input("Have you finished [Y/N]? ").upper()
+            if saida_score == "Y":
+                break
+        
+    break
+
+print(grades)
+    
+
+    
+
